@@ -261,3 +261,24 @@ header{
         }
     }
 }
+
+
+.brands{
+    background-color: white;
+
+    .container{
+        display:none;
+        justify-content: space-between;
+
+        @media (min-width:992px){
+            display:flex;
+            padding:20px;       
+        }
+       
+        @media(min-width: 1200px){
+            display: flex;
+            padding: 45px;
+           
+        } 
+    }
+}

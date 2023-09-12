@@ -236,3 +236,23 @@ header .container .menu .btn-login {
     display: inline-block;
   }
 }
+
+.brands {
+  background-color: white;
+}
+.brands .container {
+  display: none;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .brands .container {
+    display: flex;
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .brands .container {
+    display: flex;
+    padding: 45px;
+  }
+}
