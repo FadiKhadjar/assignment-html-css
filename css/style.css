@@ -15,6 +15,46 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
+.btn-yellow {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.btn-yellow i {
+  margin-left: 8px;
+  font-size: 0, 9em;
+}
+.btn-yellow:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #f2f2f2;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.btn-transparent i {
+  margin-left: 8px;
+  font-size: 0, 9em;
+}
+.btn-transparent:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #f2f2f2;
+}
+
 header {
   background-color: #f0efe9;
   padding: 16px;
@@ -28,7 +68,7 @@ header .container {
 @media (min-width: 992px) {
   header .container {
     grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo cib social" "logo menu login";
+    grid-template-areas: "logo cib social" "logo menu menu";
   }
 }
 header .container .btn-menu-bars {
@@ -49,21 +89,31 @@ header .container .logotype {
 header .container .contactinformation-bar {
   grid-area: cib;
   display: none;
-  border-bottom: 1px solid #dad9d3;
-  padding-bottom: 10px;
   justify-content: flex-start;
   align-items: center;
-  gap: 40px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   header .container .contactinformation-bar {
     display: flex;
   }
 }
+header .container .contactinformation-bar .content-box {
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #dad9d3;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+header .container .contactinformation-bar .content-box i {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+header .container .contactinformation-bar .content-box.last {
+  border: none;
+}
 header .container .socialmedia-bar {
   grid-area: social;
-  border-bottom: 1px solid #dad9d3;
-  padding-bottom: 10px;
   display: none;
 }
 @media (min-width: 992px) {
@@ -71,21 +121,118 @@ header .container .socialmedia-bar {
     display: block;
   }
 }
-header .container .mainmenu {
+header .container .socialmedia-bar a {
+  color: #191919;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+header .container .socialmedia-bar a:hover {
+  color: #7c7c7c;
+}
+header .container .menu {
   grid-area: menu;
   display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dad9d3;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 @media (min-width: 992px) {
-  header .container .mainmenu {
-    display: block;
+  header .container .menu {
+    display: flex;
   }
 }
-header .container .login {
-  grid-area: login;
-  display: none;
+header .container .menu nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
 }
-@media (min-width: 992px) {
-  header .container .login {
-    display: block;
+header .container .menu nav a.active {
+  font-weight: 500;
+}
+header .container .menu nav a.active::after, header .container .menu nav a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
+}
+header .container .menu .btn-login {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.showcase {
+  background-color: #F0EFE9;
+}
+.showcase .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase .container .content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .showcase .container .content {
+    text-align: left;
+  }
+}
+.showcase .container .content h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase .container .content h1 {
+    font-size: 86px;
+  }
+}
+.showcase .container .content p {
+  font-size: 18px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content p {
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.showcase .container .content a {
+  margin-right: 0px;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content a {
+    display: inline;
+    margin-right: 10px;
+  }
+}
+.showcase .container img {
+  display: none;
+  margin-right: -50px;
+}
+@media (min-width: 1200px) {
+  .showcase .container img {
+    display: inline-block;
   }
 }
