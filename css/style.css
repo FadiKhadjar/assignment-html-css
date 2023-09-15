@@ -272,6 +272,28 @@ header .container .menu .btn-login {
   }
 }
 
-.project-and-case .container .section-title {
+.project-and-cases .container .section-title {
   text-align: center;
+}
+
+footer {
+  background-color: #0E1021;
+  color: #FFFFFF;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 125px;
+}
+footer .container p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 40px;
+  font-family: "Inter", sans-serif;
+}
+footer .container nav {
+  font-size: 10px;
 }

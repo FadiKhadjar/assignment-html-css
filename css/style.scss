@@ -298,7 +298,7 @@ header{
     }
 }
 
-.project-and-case{
+.project-and-cases{
     .container{
 
         .section-title{
@@ -306,4 +306,40 @@ header{
             
         }
     }
+}
+
+
+footer{
+    background-color: #0E1021;
+    color: #FFFFFF;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 125px;
+        
+
+
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 40px;
+            font-family: 'Inter', sans-serif; 
+            
+        }
+        
+        nav{
+            font-size: 
+        }
+  
+           
+         
+
+
+    }
+
+
 }
