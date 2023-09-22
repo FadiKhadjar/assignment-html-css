@@ -291,16 +291,16 @@ header .container .menu .btn-login {
   }
 }
 
-.brands {
+.partners {
   background-color: white;
 }
-.brands .container {
+.partners .container {
   display: none;
   justify-content: space-between;
   padding: 45px;
 }
 @media (min-width: 992px) {
-  .brands .container {
+  .partners .container {
     display: flex;
   }
 }
