@@ -332,6 +332,64 @@ header{
     }
 }
 
+.features{
+
+    .container{
+        border: 1px solid #eee8e8;
+        border-radius: 3px;
+        
+        display: flex;
+        margin-top: 40px;
+
+        .section-title{
+
+
+            p{
+                font-family: 'Inter', sans-serif;
+                margin-bottom: 20px;
+            }
+
+            h2{
+                margin-bottom: 50px;
+                margin-right: 80px;
+                       
+            }
+        
+            @media (min-width: 768px){
+                padding-top: 75px;
+                padding-bottom: 90px;
+        
+            }
+        }
+
+        .btn-yellow{    
+            padding:15px 180px;
+
+        }
+
+        .xxx{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+
+            
+        
+
+            
+            .advice{
+                
+                text-decoration: none;
+                color: #191919;
+                
+    
+    
+            }
+        }
+    }
+}
+
+
+
 .project-and-case{
     .container{
         

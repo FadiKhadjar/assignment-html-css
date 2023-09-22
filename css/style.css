@@ -305,6 +305,39 @@ header .container .menu .btn-login {
   }
 }
 
+.features .container {
+  border: 1px solid #eee8e8;
+  border-radius: 3px;
+  display: flex;
+  margin-top: 40px;
+}
+.features .container .section-title p {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+}
+.features .container .section-title h2 {
+  margin-bottom: 50px;
+  margin-right: 80px;
+}
+@media (min-width: 768px) {
+  .features .container .section-title {
+    padding-top: 75px;
+    padding-bottom: 90px;
+  }
+}
+.features .container .btn-yellow {
+  padding: 15px 180px;
+}
+.features .container .xxx {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.features .container .xxx .advice {
+  text-decoration: none;
+  color: #191919;
+}
+
 .project-and-case .container .section-title {
   text-align: center;
 }
