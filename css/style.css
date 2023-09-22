@@ -297,17 +297,11 @@ header .container .menu .btn-login {
 .brands .container {
   display: none;
   justify-content: space-between;
+  padding: 45px;
 }
 @media (min-width: 992px) {
   .brands .container {
     display: flex;
-    padding: 20px;
-  }
-}
-@media (min-width: 1200px) {
-  .brands .container {
-    display: flex;
-    padding: 45px;
   }
 }
 
@@ -390,7 +384,7 @@ header .container .menu .btn-login {
   display: block;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .newsletter .container {
     display: flex;
     justify-content: space-between;
@@ -411,6 +405,11 @@ header .container .menu .btn-login {
   outline: none;
   border: 1px solid rgba(25, 25, 25, 0.1);
   margin: 10px 0px 10px 0px;
+}
+@media (min-width: 576px) {
+  .newsletter .container form input {
+    margin-right: 10px;
+  }
 }
 @media (min-width: 1200px) {
   .newsletter .container form input {

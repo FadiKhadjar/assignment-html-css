@@ -324,17 +324,11 @@ header{
     .container{
         display:none;
         justify-content: space-between;
+        padding: 45px;
 
         @media (min-width:992px){
             display:flex;
-            padding:20px;       
-        }
-       
-        @media(min-width: 1200px){
-            display: flex;
-            padding: 45px;
-           
-        } 
+        }   
     }
 }
 
@@ -420,20 +414,19 @@ header{
         width: 100px;
          
         @media(min-width: 576px){
-        width: 120px;   
+            width: 120px;   
         }
    
         @media(min-width: 1200px){
-        bottom: 50px;
-        }
-        
+            bottom: 50px;
+        }      
     }
     .container{
         display:block;
         text-align: center;
         
-        
-        @media(min-width: 768px){
+
+        @media(min-width: 992px){
             display: flex;
             justify-content: space-between;
             align-items: center;      
@@ -443,8 +436,8 @@ header{
             font-family: 'DM Sans', sans-serif;
             font-size: 45px;
             font-weight: 700;
-
         }
+
         form{
             input{
                 color: #191919;
@@ -455,17 +448,18 @@ header{
                 outline: none;
                 border: 1px solid rgb(25, 25, 25, 0.10);
                 margin: 10px 0px 10px 0px;
-
+                
+                @media(min-width:576px){
+                    margin-right: 10px;
+                }
+                
                 @media(min-width: 1200px){
                     margin-right: 20px;  
-                }
-
-                
+                }      
             }
         }      
     }
 }
-
 
 
 footer{
