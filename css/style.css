@@ -298,6 +298,7 @@ header .container .menu .btn-login {
   display: none;
   justify-content: space-between;
   padding: 45px;
+  margin-top: 40px;
 }
 @media (min-width: 992px) {
   .partners .container {
@@ -305,37 +306,61 @@ header .container .menu .btn-login {
   }
 }
 
-.features .container {
+.features {
   border: 1px solid #eee8e8;
+  margin: 40px 200px;
+}
+.features .container {
   border-radius: 3px;
   display: flex;
+  align-items: center;
   margin-top: 40px;
+}
+.features .container .section-title {
+  margin-right: -20px;
 }
 .features .container .section-title p {
   font-family: "Inter", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .features .container .section-title h2 {
-  margin-bottom: 50px;
-  margin-right: 80px;
-}
-@media (min-width: 768px) {
-  .features .container .section-title {
-    padding-top: 75px;
-    padding-bottom: 90px;
-  }
+  margin-bottom: 40px;
+  margin-right: 300px;
 }
 .features .container .btn-yellow {
-  padding: 15px 180px;
+  padding: 15px 160px;
 }
 .features .container .xxx {
   display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 576px) {
+  .features .container .xxx {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .features .container .xxx .advice {
-  text-decoration: none;
+  display: grid;
   color: #191919;
+  text-decoration: none;
+  margin-left: -60px;
+  margin-bottom: 60px;
+}
+.features .container .xxx .advice img {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.features .container .xxx .advice h3 {
+  font-size: 22px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+.features .container .xxx .advice p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  margin-right: 60px;
 }
 
 .project-and-case .container .section-title {

@@ -325,6 +325,7 @@ header{
         display:none;
         justify-content: space-between;
         padding: 45px;
+        margin-top: 40px;
 
         @media (min-width:992px){
             display:flex;
@@ -333,56 +334,78 @@ header{
 }
 
 .features{
+    border: 1px solid #eee8e8;
+    margin: 40px 200px;
+
 
     .container{
-        border: 1px solid #eee8e8;
+
         border-radius: 3px;
-        
         display: flex;
+        align-items: center;
         margin-top: 40px;
 
-        .section-title{
 
+
+        
+        .section-title{
+            margin-right: -20px;
 
             p{
                 font-family: 'Inter', sans-serif;
-                margin-bottom: 20px;
+                margin-bottom: 50px;
+                   
             }
 
             h2{
-                margin-bottom: 50px;
-                margin-right: 80px;
-                       
+                margin-bottom: 40px;
+                margin-right: 300px;
             }
         
-            @media (min-width: 768px){
-                padding-top: 75px;
-                padding-bottom: 90px;
-        
-            }
         }
 
         .btn-yellow{    
-            padding:15px 180px;
-
+            padding:15px 160px;
+            
         }
 
         .xxx{
             display: grid;
-            align-items: center;
+            grid-template-columns: 1fr;
+
+
+            @media(min-width: 576px){
             grid-template-columns: 1fr 1fr;
+            }
 
-            
-        
-
-            
             .advice{
-                
-                text-decoration: none;
+                display: grid;
                 color: #191919;
+                text-decoration: none;
+                margin-left: -60px;
+                margin-bottom: 60px;
                 
-    
-    
+                
+                img{
+                    margin-top: 100px;
+                    margin-bottom: 20px;
+                }
+
+                h3{
+                    font-size: 22px;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                }
+
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 60px;
+                    margin-right: 60px;
+                
+
+                }
             }
         }
     }
