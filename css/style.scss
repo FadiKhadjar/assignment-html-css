@@ -334,27 +334,43 @@ header{
 }
 
 .partners{
-    background-color: white;
-
     .container{
-        display:none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         padding: 45px;
         margin-top: 40px;
+        gap: 20px;
+
+        @media (min-width:768px){
+            display:flex;
+            flex-direction: column;
+            gap: 30px;
+        }   
+
         @media (min-width:992px){
             display:flex;
+            flex-direction: row;
+            gap: 50px;
         }   
+        @media (min-width:1200px){
+            display:flex;
+            flex-direction: row;
+            gap: 90px;
+        } 
+        :hover{
+            opacity: 90%;
+        }  
     }
 }
 
 .features{
     .container{
-
         @media(min-width:768px){
             border: 1px solid #dddcdc;
             border-radius: 3px;
         }
-
 
         @media(min-width:1400px){
             display: flex;    
@@ -366,15 +382,13 @@ header{
 
             @media(min-width:1200px){
                 text-align: center;
-                padding: 40px;
-                
+                padding: 40px;   
             }
             
             @media(min-width:1400px){
                 text-align: start;
                 padding: 80px 120px 0px 10px;
-                border: 1px solid black;
-                
+                border: 1px solid black;   
             }
 
             h2{
@@ -396,18 +410,16 @@ header{
             align-items: center;
             flex-direction: column;
             margin-bottom: 80px;
-            
-
+        
             @media(min-width:992px){
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 margin: -20px 160px 80px 130px;
                 gap: 40px;
                 column-gap: 180px;
-
             }
-            @media(min-width:1200px){
 
+            @media(min-width:1200px){
             }
 
             @media(min-width:1400px){
@@ -415,10 +427,8 @@ header{
                 gap: 20px;
                 margin-bottom: 80px;
                 
-                margin-right: 350px;
-                border: 1px solid black;
-                
-                       
+                margin-right: 380px;
+                border: 1px solid black;       
             }
                          
             .advice{
@@ -426,9 +436,7 @@ header{
                 color: #191919;
                 margin-top: 40px;
                 
-                
-                
-                    
+               
                 img{
                     width: 42px;
                 }

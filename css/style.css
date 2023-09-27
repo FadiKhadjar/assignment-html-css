@@ -305,19 +305,38 @@ header .container .menu .btn-login {
   }
 }
 
-.partners {
-  background-color: white;
-}
 .partners .container {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   padding: 45px;
   margin-top: 40px;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .partners .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 @media (min-width: 992px) {
   .partners .container {
     display: flex;
+    flex-direction: row;
+    gap: 50px;
   }
+}
+@media (min-width: 1200px) {
+  .partners .container {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+  }
+}
+.partners .container :hover {
+  opacity: 90%;
 }
 
 @media (min-width: 768px) {
@@ -381,7 +400,7 @@ header .container .menu .btn-login {
     margin: 0px;
     gap: 20px;
     margin-bottom: 80px;
-    margin-right: 350px;
+    margin-right: 380px;
     border: 1px solid black;
   }
 }
