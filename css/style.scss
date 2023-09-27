@@ -354,16 +354,27 @@ header{
             border: 1px solid #dddcdc;
             border-radius: 3px;
         }
+
+
         @media(min-width:1400px){
-            display: flex;              
+            display: flex;    
+            margin-top: 80px;          
         }
 
         .section-title{
-            text-align: center;    
-   
+            text-align: center;  
+
+            @media(min-width:1200px){
+                text-align: center;
+                padding: 40px;
+                
+            }
+            
             @media(min-width:1400px){
                 text-align: start;
-                margin-right: 500px;
+                padding: 80px 120px 0px 10px;
+                border: 1px solid black;
+                
             }
 
             h2{
@@ -374,29 +385,48 @@ header{
                 padding:15px 60px; 
             
                 @media(min-width:992px){
-                    padding: 15px 150px;
+                    padding: 15px 160px;    
                 }  
             }
         }
 
-        .management-grid{
-            display: grid;
+        .management{
+            display: flex;
             grid-template-columns: 1fr;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 80px;
+            
 
             @media(min-width:992px){
+                display: grid;
                 grid-template-columns: 1fr 1fr;
+                margin: -20px 160px 80px 130px;
+                gap: 40px;
+                column-gap: 180px;
 
-                border: 1px solid black;
+            }
+            @media(min-width:1200px){
+
             }
 
-            @media(min-width:1200px){
+            @media(min-width:1400px){
+                margin: 0px;
+                gap: 20px;
+                margin-bottom: 80px;
                 
+                margin-right: 350px;
+                border: 1px solid black;
+                
+                       
             }
                          
             .advice{
                 text-decoration: none;
                 color: #191919;
                 margin-top: 40px;
+                
+                
                 
                     
                 img{
@@ -413,8 +443,7 @@ header{
                     font-family: 'Inter', sans-serif;
                     font-size: 16px;
                     font-weight: 400;     
-                }
-              
+                } 
             }
         }
     }
@@ -449,9 +478,7 @@ header{
                 display: flex;
                 width: 300px;
                 align-items: center;
-                
-               
-                
+                   
                 
             }
 
