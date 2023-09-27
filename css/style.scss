@@ -382,7 +382,7 @@ header{
                 text-decoration: none;
                 color: #191919;
                 margin-top: 40px;
-                border: 1px solid black;
+                
                     
                 img{
                     width: 42px;
@@ -405,6 +405,55 @@ header{
     }
 }
 
+.about-company{
+    position: relative;
+    // background-color: #c0c2d1;
+    
+
+    .background-white-wavy-lines{
+        position: absolute;
+        bottom: 20px;
+        left: 100px;
+        width: 100px;
+        display: none;
+        
+    }
+
+    .container{
+        
+        .content{
+            .img-of-founder{
+                display: none;
+                
+                
+            }
+
+            .blue-position-box{
+                display: none;
+            }
+
+            .section-title{
+                text-align: center;
+            }
+
+            .section-paragraph{
+                display: none;
+            }
+
+            .center-content{
+                gap: 10px;
+
+            }
+
+     
+        }
+            
+
+            
+            
+        
+    }
+}
 
 
 
@@ -569,42 +618,4 @@ footer{
 
 }
 
-.about-company{
 
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        gap: 60px;
-        padding-top: 100px;
-
-        .content{
-            border: 1px solid black;
-            margin-bottom: 200px;
-
-            .section-title{
-                margin-right: 100px;
-
-
-            }
-
-
-        }
-
-        img{
-            padding: 40px;
-
-            
-        }
-
-
-
-
-            
-        
-    }
-
-    
-
-}
