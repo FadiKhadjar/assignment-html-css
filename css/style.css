@@ -607,19 +607,15 @@ footer {
   background-color: #0E1021;
   color: #FFFFFF;
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 footer .container {
-  border: 1px solid black;
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
   footer .container {
     display: flex;
   }
-}
-footer .container .logotype {
-  border: 1px solid black;
 }
 footer .container .logotype img {
   margin-bottom: 15px;
@@ -644,14 +640,15 @@ footer .container .row {
 @media (min-width: 992px) {
   footer .container .row {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-right: 60px;
-    margin-left: 50px;
+    padding-right: 10px;
+    margin-left: 10px;
+    gap: 10px;
   }
 }
 @media (min-width: 1400px) {
   footer .container .row {
-    margin-left: 180px;
     gap: 80px;
+    margin-left: 180px;
   }
 }
 footer .container .row .footer-col h4 {
@@ -672,9 +669,8 @@ footer .container .row .footer-col ul a {
   margin-right: 100px;
 }
 footer .footer-end {
-  border-top: 1px solid white;
-  padding-top: 30px;
-  padding-bottom: -30px;
+  border-top: 0.5px solid #707070;
+  padding-top: 20px;
 }
 @media (min-width: 768px) {
   footer .footer-end .container {
