@@ -704,17 +704,44 @@ header{
 footer{
     background-color: #0E1021;
     color: #FFFFFF;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 40px;
     
     
     .container{
-        margin-left: 15px;
+        
+        border: 1px solid black;
+        padding-bottom: 20px;
+
+        @media(min-width:768px){
+            display: flex;
+        }
         
 
+
         .logotype{
+
+            border: 1px solid black;
+
             
+            @media(min-width:1200px){
+                   
+            }
+
+            img{
+                
+                margin-bottom: 15px;
+            }
+
+            p{
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                font-weight: 300;
+                margin-bottom: 40px;
+                
+            }
             
+
         }
 
         
@@ -722,6 +749,30 @@ footer{
 
             display: grid;
             grid-template-columns: 1fr 1fr;
+
+            @media(min-width: 768px){
+            padding-right: 40px;
+            margin-right: 20px;
+            padding: 20px;
+
+            }
+
+            @media(min-width: 992px){
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding-right: 60px;
+                margin-left: 50px;
+            }
+
+            @media(min-width:1400px){
+                // padding: 20px;
+                margin-left: 180px;
+                
+                
+                gap: 80px;
+                
+                   
+                
+            }
             
             
 
@@ -744,7 +795,8 @@ footer{
                         font-family: 'Inter', sans-serif;
                         font-size: 14px;
                         font-weight: 300;
-                        color: #FFFFFF;   
+                        color: #FFFFFF;
+                        margin-right: 100px;   
                         
                     }
                    
@@ -757,37 +809,46 @@ footer{
     }
 
     .footer-end{
-            
-       
 
+        border-top: 1px solid white;
         padding-top: 30px;
         padding-bottom: -30px;
-        
-        
-        p{
-            font-family: 'Inter', sans-serif;
-            font-size: 12px;
-            font-weight: 300;
-            color: #FFFFFF;
-            
 
+        .container{
 
-        }
-
-        .socialmedia-bar{
-            border: 1px solid black;
-            margin
-            
-            a{
-                color: #dad9d3;
-                font-size: 1.3rem;
-
-                &:hover {
-                    color: #7c7c7c;
-                }
+            @media(min-width:768px){
+                display: flex;
+                justify-content: space-between;
             }
 
+            p{
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                font-weight: 300;
+                color: #FFFFFF;   
+        
+            }
+
+            .socialmedia-bar{
+        
+                display: flex;
+                gap: 15px;
+
+                a{
+                    color: #dad9d3;
+                    font-size: 1.3rem;
+            
+            
+            
+                    &:hover {
+                        color: #7c7c7c;
+                    }
+                }
+
+            }
         }
+
+
     }
 
 

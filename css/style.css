@@ -606,15 +606,53 @@ header .container .menu .btn-login {
 footer {
   background-color: #0E1021;
   color: #FFFFFF;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 footer .container {
-  margin-left: 15px;
+  border: 1px solid black;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  footer .container {
+    display: flex;
+  }
+}
+footer .container .logotype {
+  border: 1px solid black;
+}
+footer .container .logotype img {
+  margin-bottom: 15px;
+}
+footer .container .logotype p {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 footer .container .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 768px) {
+  footer .container .row {
+    padding-right: 40px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+}
+@media (min-width: 992px) {
+  footer .container .row {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-right: 60px;
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  footer .container .row {
+    margin-left: 180px;
+    gap: 80px;
+  }
 }
 footer .container .row .footer-col h4 {
   font-family: "DM Sans", sans-serif;
@@ -631,24 +669,33 @@ footer .container .row .footer-col ul a {
   font-size: 14px;
   font-weight: 300;
   color: #FFFFFF;
+  margin-right: 100px;
 }
 footer .footer-end {
+  border-top: 1px solid white;
   padding-top: 30px;
   padding-bottom: -30px;
 }
-footer .footer-end p {
+@media (min-width: 768px) {
+  footer .footer-end .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+footer .footer-end .container p {
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 300;
   color: #FFFFFF;
 }
-footer .footer-end .socialmedia-bar {
-  border: 1px solid black;
+footer .footer-end .container .socialmedia-bar {
+  display: flex;
+  gap: 15px;
 }
-footer .footer-end .socialmedia-bar margin a {
+footer .footer-end .container .socialmedia-bar a {
   color: #dad9d3;
   font-size: 1.3rem;
 }
-footer .footer-end .socialmedia-bar margin a:hover {
+footer .footer-end .container .socialmedia-bar a:hover {
   color: #7c7c7c;
 }
