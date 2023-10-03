@@ -614,6 +614,20 @@ footer {
   color: #FFFFFF;
   padding-top: 60px;
   padding-bottom: 0px;
+  position: relative;
+}
+footer .wavy-lines-footer {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer .wavy-lines-footer {
+    display: flex;
+    position: absolute;
+    bottom: 85px;
+    right: 0px;
+    width: 100px;
+    width: 300px;
+  }
 }
 footer .container {
   padding-bottom: 20px;
