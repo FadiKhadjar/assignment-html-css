@@ -369,8 +369,18 @@ header .container .menu .btn-login {
 .features .container .section-title h2 {
   padding-bottom: 30px;
 }
+@media (min-width: 1400px) {
+  .features .container .section-title h2 {
+    margin-right: 450px;
+  }
+}
 .features .container .section-title .btn-yellow {
   padding: 15px 60px;
+}
+@media (min-width: 768px) {
+  .features .container .section-title .btn-yellow {
+    padding: 15px 80px;
+  }
 }
 @media (min-width: 992px) {
   .features .container .section-title .btn-yellow {
@@ -396,9 +406,11 @@ header .container .menu .btn-login {
 @media (min-width: 1400px) {
   .features .container .management {
     margin: 0px;
-    gap: 20px;
+    gap: 40px;
     margin-bottom: 90px;
-    margin-right: 100px;
+    margin-top: 40px;
+    margin-left: -450px;
+    margin-right: 200px;
   }
 }
 .features .container .management :hover {
@@ -812,8 +824,10 @@ header .container .menu .btn-login {
   font-size: 45px;
   font-weight: 700;
 }
-.newsletter .container form {
-  margin-right: 60px;
+@media (min-width: 992px) {
+  .newsletter .container form {
+    margin-right: 80px;
+  }
 }
 .newsletter .container form input {
   color: #191919;
@@ -880,6 +894,14 @@ footer .container .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (min-width: 450px) {
+  footer .container .row {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 40px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+}
 @media (min-width: 768px) {
   footer .container .row {
     padding-right: 40px;
@@ -898,7 +920,6 @@ footer .container .row {
 @media (min-width: 1400px) {
   footer .container .row {
     gap: 65px;
-    flex: 1;
     margin-left: 90px;
   }
 }

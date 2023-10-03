@@ -366,7 +366,10 @@ header{
 }
 
 .features{
+    
     .container{
+        // width: 4000px;
+
         @media(min-width:768px){
             border: 1px solid #dddcdc;
             border-radius: 3px;
@@ -378,7 +381,7 @@ header{
         }
 
         .section-title{
-            text-align: center;  
+            text-align: center;
 
             @media(min-width:1200px){
                 text-align: center;
@@ -393,10 +396,19 @@ header{
 
             h2{
                 padding-bottom: 30px; 
+
+                @media(min-width:1400px){
+                    margin-right: 450px;
+                }
+
             }
 
             .btn-yellow{
                 padding:15px 60px; 
+
+                @media(min-width:768px){
+                    padding: 15px 80px;    
+                }  
             
                 @media(min-width:992px){
                     padding: 15px 160px;    
@@ -419,16 +431,15 @@ header{
                 column-gap: 180px;
             }
 
-            @media(min-width:1200px){
-            }
 
             @media(min-width:1400px){
                 margin: 0px;
-                gap: 20px;
+                gap: 40px;
                 margin-bottom: 90px;
-                
-                margin-right: 100px;
-                
+                margin-top: 40px;
+                margin-left: -450px;
+                margin-right: 200px;
+  
             }
             :hover{
                 opacity: 80%;
@@ -648,13 +659,11 @@ header{
             flex-direction: column;
             margin-bottom: 40px;
 
-
             @media (min-width: 992px){
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
-                margin-bottom: -55px;    
-                
+                margin-bottom: -55px;        
             }
   
             .section-title{
@@ -666,7 +675,6 @@ header{
             }
 
             .btn-transparent{
-                // margin-bottom: 40px;
                 height: 1;
                 min-width: 20%;
                 margin-top: -20px;
@@ -680,8 +688,7 @@ header{
             
                     margin-top: 25px;
                     i{
-                        margin-left: 25px;
-                        
+                        margin-left: 25px;    
                     } 
                 }    
             }
@@ -785,8 +792,7 @@ header{
                         color: #191919;
                         justify-content: center;
                         margin-bottom: -6px;
-                        
-                        
+                          
                         @media(min-width:576px){
                             font-size: 20px;
                         }
@@ -820,7 +826,6 @@ header{
                     
                     @media(min-width: 1400px){
                         margin-right: -20px;
-
                     }
                 }
 
@@ -843,19 +848,15 @@ header{
 
                 img{
                     width: 100%;
-                    height: auto;
-                    
+                    height: auto;    
                 }
             }
-
         }
 
         .dots{
-
             display: none;
 
             @media(min-width: 768px){
-
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -875,7 +876,6 @@ header{
                         
                     }
                 }
-    
             }
         }    
     }
@@ -924,7 +924,10 @@ header{
 
         form{
 
-            margin-right: 60px;
+            @media(min-width:992px){
+                margin-right: 80px;
+            }
+
             input{
                 color: #191919;
                 padding: 15px 30px;
@@ -993,10 +996,17 @@ footer{
             }
         }
 
-        
         .row{
             display: grid;
             grid-template-columns: 1fr 1fr;
+            
+
+            @media(min-width: 450px){
+                grid-template-columns: 1fr 1fr;
+                padding-right: 40px;
+                margin-right: 20px;
+                padding: 20px;
+            }
 
             @media(min-width: 768px){
             padding-right: 40px;
@@ -1013,8 +1023,6 @@ footer{
 
             @media(min-width:1400px){ 
                 gap: 65px;
-                // margin-left: 80px;
-                flex: 1;
                 margin-left: 90px;     
             }
             
@@ -1036,7 +1044,6 @@ footer{
                     }
 
                     a{
-                        // har ändrat font-weight, då det verkar inte riktigt överenstämma med designfilen
                         text-decoration: none;
                         font-family: 'Inter', sans-serif;
                         font-size: 14px;
