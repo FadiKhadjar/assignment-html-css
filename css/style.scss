@@ -676,6 +676,8 @@ header{
         }
 
         form{
+
+            margin-right: 60px;
             input{
                 color: #191919;
                 padding: 15px 30px;
@@ -693,6 +695,11 @@ header{
                 @media(min-width: 1200px){
                     margin-right: 20px;  
                 }      
+            }
+
+            .btn-yellow{
+                padding: 15px 40px;
+
             }
         }      
     }
@@ -727,7 +734,9 @@ footer{
                 font-family: 'Inter', sans-serif;
                 font-size: 12px;
                 font-weight: 300;
-                margin-bottom: 40px;    
+                margin-bottom: 40px;
+                
+                
             }
         }
 
@@ -749,24 +758,38 @@ footer{
                 padding-right: 10px;
                 margin-left: 10px;
                 gap: 10px;
+                
             }
 
             @media(min-width:1400px){ 
-                gap: 80px;
-                margin-left: 180px; 
+                gap: 65px;
+                // margin-left: 80px;
+                flex: 1;
+                margin-left: 90px; 
+                
+                
             }
             
             .footer-col{
+                
+                
                 h4{
                     font-family: 'DM Sans', sans-serif;
                     font-size: 22;
-                    font-weight: 700;    
+                    font-weight: 700; 
+                    margin-bottom: 20px;
+                      
                 }
                 
                 ul{
                     list-style: none;
                     padding-inline-start: 0;
-            
+                    
+                    li{
+                        margin-bottom: 10px;
+                    }
+
+
                     a{
                         // har ändrat font-weight, då det verkar inte riktigt överenstämma med designfilen
                         text-decoration: none;
@@ -775,7 +798,7 @@ footer{
                         font-weight: 300;
                         color: #FFFFFF;
                         margin-right: 100px;
-                             
+                           
                     }
                 }    
             }
@@ -789,6 +812,8 @@ footer{
         
         .container{
 
+            
+
             @media(min-width:768px){
                 display: flex;
                 justify-content: space-between;
@@ -798,13 +823,15 @@ footer{
                 font-family: 'Inter', sans-serif;
                 font-size: 12px;
                 font-weight: 300;
-                color: #FFFFFF;   
+                color: #FFFFFF;
+                margin-top: 10px;   
             }
 
             .socialmedia-bar{
                 display: flex;
-                gap: 15px;
-
+                gap: 35px;
+                margin-top: 5px;
+                
                 a{
                     color: #dad9d3;
                     font-size: 1.3rem;
