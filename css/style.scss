@@ -637,6 +637,100 @@ header{
     }
 }
 
+
+.article-and-news{
+
+    .container{
+
+
+        .center-content{
+
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+
+
+            @media (min-width: 992px){
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                margin-bottom: -55px;    
+                
+            }
+  
+            .section-title{
+                text-align: center;
+
+                @media(min-width: 992px){
+                    text-align: start;
+                }
+            }
+
+            .btn-transparent{
+                // margin-bottom: 40px;
+                height: 1;
+                min-width: 20%;
+                margin-top: -20px;
+
+                @media (min-width: 768px){
+            
+                    margin-top: -60px;
+                 
+                }
+
+                @media (min-width: 992px){
+            
+                    margin-top: 25px;
+                    i{
+                        margin-left: 25px;
+                        
+                    } 
+                }    
+            }
+        }
+
+        .business{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            @media (min-width: 768px){
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .business-col{
+
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+                color: #191919;
+                text-decoration: none;
+                
+                p{
+
+                }
+
+                h3{
+                    padding-top: 35px;
+                    padding-bottom: 16px;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+
+                img{
+                    width: 100%;
+                    height: auto;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
 .newsletter{
     position: relative;
     background-color: #F0EFE9;
@@ -651,7 +745,7 @@ header{
         width: 100px;
          
         @media(min-width: 576px){
-            width: 120px;   
+            width: 140px;   
         }
    
         @media(min-width: 1200px){
@@ -705,9 +799,6 @@ header{
     }
 }
 
-
-
-
 footer{
     background-color: #0E1021;
     color: #FFFFFF;
@@ -715,9 +806,7 @@ footer{
     padding-bottom: 0px;
     position: relative;
     
-
     .wavy-lines-footer{
-
         display: none;
         
         @media(min-width: 768px){
@@ -727,25 +816,18 @@ footer{
         right: 0px;
         width: 100px;
         width: 300px;
-
         }
     }
         
-
-    
-    
     .container{
-        
         padding-bottom: 20px;
-        
+
         @media(min-width:768px){
             display: flex;    
         }
         
         .logotype{
   
-
-
             img{
                 margin-bottom: 15px;      
             }
@@ -754,15 +836,12 @@ footer{
                 font-family: 'Inter', sans-serif;
                 font-size: 12px;
                 font-weight: 300;
-                margin-bottom: 40px;
-                
-                
+                margin-bottom: 40px; 
             }
         }
 
         
         .row{
-
             display: grid;
             grid-template-columns: 1fr 1fr;
 
@@ -770,35 +849,29 @@ footer{
             padding-right: 40px;
             margin-right: 20px;
             padding: 20px;
-
             }
 
             @media(min-width: 992px){
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 padding-right: 10px;
                 margin-left: 10px;
-                gap: 10px;
-                
+                gap: 10px;     
             }
 
             @media(min-width:1400px){ 
                 gap: 65px;
                 // margin-left: 80px;
                 flex: 1;
-                margin-left: 90px; 
-                
-                
+                margin-left: 90px;     
             }
             
             .footer-col{
-                
                 
                 h4{
                     font-family: 'DM Sans', sans-serif;
                     font-size: 22;
                     font-weight: 700; 
-                    margin-bottom: 20px;
-                      
+                    margin-bottom: 20px;      
                 }
                 
                 ul{
@@ -809,7 +882,6 @@ footer{
                         margin-bottom: 10px;
                     }
 
-
                     a{
                         // har ändrat font-weight, då det verkar inte riktigt överenstämma med designfilen
                         text-decoration: none;
@@ -817,8 +889,7 @@ footer{
                         font-size: 14px;
                         font-weight: 300;
                         color: #FFFFFF;
-                        margin-right: 100px;
-                           
+                        margin-right: 100px;       
                     }
                 }    
             }
@@ -829,12 +900,8 @@ footer{
 
         border-top: 0.5px solid #707070;
         padding-top: 20px;
-        
-        
-        
+    
         .container{
-
-            
 
             @media(min-width:768px){
                 display: flex;
