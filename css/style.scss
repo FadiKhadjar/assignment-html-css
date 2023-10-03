@@ -642,7 +642,6 @@ header{
 
     .container{
 
-
         .center-content{
 
             display: flex;
@@ -674,8 +673,7 @@ header{
 
                 @media (min-width: 768px){
             
-                    margin-top: -60px;
-                 
+                    margin-top: -60px; 
                 }
 
                 @media (min-width: 992px){
@@ -693,6 +691,7 @@ header{
             display: grid;
             grid-template-columns: 1fr;
             gap: 30px;
+            padding-bottom: 170px;
 
             @media (min-width: 768px){
                 grid-template-columns: 1fr 1fr 1fr;
@@ -706,6 +705,7 @@ header{
                 color: #191919;
                 text-decoration: none;
                 position: relative;
+                
 
                 .calender-box{
                     position:absolute;
@@ -714,38 +714,23 @@ header{
                     width: 50px;
                     left: 17px;
                     top: 12px;
-                    font-family: 'DM Sans', sans-serif;
-                    font-weight: 600;
-                    font-size: 16px;
-                    text-align: center;
                     
                     @media(min-width:576px){
 
-                        height: 90px;
-                        width: 70px;
-                        font-family: 'DM Sans', sans-serif;
-                        font-weight: 600;
-                        font-size: 26px;
-                        }
+                        height: 80px;
+                        width: 70px; 
+                    }
     
                     @media(min-width:768px){
-                        height: 35px;
+                        height: 37px;
                         width: 28px;
                         left: 8px;
-                        top: 6px;
-                        font-family: 'DM Sans', sans-serif;
-                        font-weight: 600;
-                        font-size: 12px;
+                        top: 5px;
                     }
 
                     @media(min-width:992px){
-                        height: 45px;
+                        height: 47px;
                         width: 38px;
-                        left: 10px;
-                        top: 8px;
-                        font-family: 'DM Sans', sans-serif;
-                        font-weight: 600;
-                        font-size: 16px;
                     }
 
                     @media(min-width:1200px){
@@ -753,9 +738,6 @@ header{
                         width: 48px;
                         left: 12px;
                         top: 8px;
-                        font-family: 'DM Sans', sans-serif;
-                        font-weight: 600;
-                        font-size: 20px;
                     }
 
                     @media(min-width:1400px){
@@ -763,9 +745,37 @@ header{
                         width: 58px;
                         left: 14px;
                         top: 8px;
+                        margin-top: 15px;
+                    }
+
+                    h4{
+                        margin-top: 10px;
                         font-family: 'DM Sans', sans-serif;
                         font-weight: 600;
-                        font-size: 22px;
+                        font-size: 16px;
+                        text-align: center;
+
+                        @media(min-width:576px){
+                            font-size: 26px;
+                        }
+
+                        @media(min-width:768px){
+                            font-size: 12px;
+                            margin-top: 6px;
+                        }
+
+                        @media(min-width:992px){
+                            font-size: 16px;
+                        }
+
+                        @media(min-width:1200px){
+                            font-size: 20px;
+                        }
+
+                        @media(min-width:1400px){
+                            font-size: 22px;
+                            margin-top: 10px;
+                        }
                     }
 
                     span{
@@ -773,8 +783,10 @@ header{
                         font-size: 12px;
                         font-weight: 300;
                         display: block;
-                        margin-top: -4px;
                         color: #191919;
+                        justify-content: center;
+                        margin-bottom: -6px;
+                        
                         
                         @media(min-width:576px){
                             font-size: 20px;
@@ -795,29 +807,45 @@ header{
                         @media(min-width:1400){
                             font-size: 16px;    
                         }
-
-               
                     }
-
                 }
                 
                 p{
+                    font-size:16px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 300;
+                    margin-top: 10px;
+                    // border: 1px solid black;
+                    margin-right: 0px;
+                    margin-bottom: 50px;
+                    
+                    @media(min-width: 1400px){
+                         margin-right: -20px;
 
+                    }
                 }
 
                 h3{
-                    padding-top: 35px;
-                    padding-bottom: 16px;
+                    padding-top: 20px;
+                    padding-bottom: 35px;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
                     font-size: 22px;
+                    margin-top: -50px;
+                    margin-bottom: 0px;
+
+                    @media(min-width: 1400px){
+                        margin-right: 100px;
+                        span{
+                            display: block;
+                        }
+                    }    
                 }
 
                 img{
                     width: 100%;
                     height: auto;
                     
-
                 }
             }
         }
