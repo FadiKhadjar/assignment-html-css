@@ -320,7 +320,6 @@ header{
                 }                
             }
 
-
         }
         img{
             display: none;
@@ -486,96 +485,35 @@ header{
 
         .content{
 
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 120px 0px;
-            // position: relative;
-            background-color: #0E1021;
-
-
-
-            .img-of-founder{
-                
-                display: flex;
-                width: 300px;
-                align-items: center;
+            .parent{
                 position: relative;
+                top: 0;
+                left: 0;
+                
+                .img-of-founder{
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: auto;
 
+                }
+                    
                 .background-white-wavy-lines{
                     position: absolute;
-                    bottom: 0px;
-                    right: 0;
-                    width: 100px;
-                    
-        
-                    // display: none;
-                    
+                    top: 15px;
+                    left: -14px;
+                    width: 115px;
                 }
-
                 
             }
 
-            .blue-position-box{
-                display: none;
-                font-family: 'Dm sans', sans-serif;
-                position: absolute;
-                background-color: #BEEBFF;
-                padding: 10px 5px 15px;
-                margin-top: 225px;
-                
-                
-                
-                span{
-                    color: #F94D1C;
-                    font-size: 12px;
-                    font-weight: 600;
-                }
-
-                h6{
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: #191919;
-                }
-
-                p{
-                    font-family: 'Inter', sans-serif;
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-
-                @media(min-width: 576px){
-                    display: block;
-                    
-                }
-
-            }
-
-            .section-title{
-                text-align: center;
-                
-            }
-
-            .section-paragraph{
-                display: none;
-            }
-
-            .center-content{
-                gap: 20px;
-                
-                
-                p{
-                    font-family: 'Inter', sans-serif;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: #191919;
-                    margin-left: -10px;
-                    margin-top: 16px;
-                  
-                }
-            }
-        }                 
+        }
     }
+
+
+                             
+
 }
 
 

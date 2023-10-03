@@ -438,69 +438,23 @@ header .container .menu .btn-login {
   margin-right: 20px;
 }
 
-.about-company .container .content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 120px 0px;
-  background-color: #0E1021;
-}
-.about-company .container .content .img-of-founder {
-  display: flex;
-  width: 300px;
-  align-items: center;
+.about-company .container .content .parent {
   position: relative;
+  top: 0;
+  left: 0;
 }
-.about-company .container .content .img-of-founder .background-white-wavy-lines {
+.about-company .container .content .parent .img-of-founder {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.about-company .container .content .parent .background-white-wavy-lines {
   position: absolute;
-  bottom: 0px;
-  right: 0;
-  width: 100px;
-}
-.about-company .container .content .blue-position-box {
-  display: none;
-  font-family: "Dm sans", sans-serif;
-  position: absolute;
-  background-color: #BEEBFF;
-  padding: 10px 5px 15px;
-  margin-top: 225px;
-}
-.about-company .container .content .blue-position-box span {
-  color: #F94D1C;
-  font-size: 12px;
-  font-weight: 600;
-}
-.about-company .container .content .blue-position-box h6 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #191919;
-}
-.about-company .container .content .blue-position-box p {
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-}
-@media (min-width: 576px) {
-  .about-company .container .content .blue-position-box {
-    display: block;
-  }
-}
-.about-company .container .content .section-title {
-  text-align: center;
-}
-.about-company .container .content .section-paragraph {
-  display: none;
-}
-.about-company .container .content .center-content {
-  gap: 20px;
-}
-.about-company .container .content .center-content p {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #191919;
-  margin-left: -10px;
-  margin-top: 16px;
+  top: 15px;
+  left: -14px;
+  width: 115px;
 }
 
 .project-and-case .container .section-title {
