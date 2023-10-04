@@ -94,21 +94,19 @@ html, body {
 }
 
 .btn-arrow {
-  background-color: #ffffff;
-  border: 1px solid #191919;
-  color: #191919;
+  background-color: #191919;
+  color: #ffffff;
   text-decoration: none;
-  padding: 7px 14px;
-  border-radius: 46%;
+  padding: 15px 20px;
+  border-radius: 50%;
 }
 .btn-arrow i {
   font-size: 13px;
   margin-left: 3px;
 }
 .btn-arrow:hover {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #f2f2f2;
+  background-color: #ffffff;
+  color: #191919;
 }
 
 header {
@@ -620,7 +618,7 @@ header .container .menu .btn-login {
 }
 .our-services .container .columns .col1 {
   background-color: #ffffff;
-  padding: 35px;
+  padding: 30px;
 }
 .our-services .container .columns .col1:hover {
   background-color: #F9D783;
@@ -628,15 +626,19 @@ header .container .menu .btn-login {
 }
 @media (min-width: 1400px) {
   .our-services .container .columns .col1 {
-    padding-bottom: 90px;
+    padding-bottom: 30px;
   }
+}
+.our-services .container .columns .col1 span i {
+  font-size: 35px;
+  margin-top: 10px;
+  font-weight: 200;
 }
 .our-services .container .columns .col1 h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  margin-top: 60px;
-  border-top: 1px solid black;
+  margin-top: 20px;
 }
 .our-services .container .columns .col1 p {
   font-family: "Inter", sans-serif;
@@ -645,9 +647,14 @@ header .container .menu .btn-login {
   line-height: 30px;
   margin: 0px;
 }
+.our-services .container .columns .col1 .btn-arrow {
+  display: inline-block;
+  margin-left: 200px;
+  margin-top: 20px;
+}
 @media (min-width: 1400px) {
   .our-services .container .center-content .btn-transparent {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 
