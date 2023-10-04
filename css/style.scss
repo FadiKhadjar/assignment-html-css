@@ -677,11 +677,14 @@ header{
 
         
         .section-title{
+            text-align: center;
 
             // border: 1px solid black;
 
             @media(min-width:1400px){
                 padding-bottom: 20px;
+                text-align: start;
+                
                 
 
             }
@@ -692,7 +695,7 @@ header{
 
             h2{
                 @media(min-width: 1400px){
-                    // border: 1px solid black;
+                    
                     width: 500px;
                     
                     
@@ -703,10 +706,41 @@ header{
         }
 
         .columns{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2em;
+
+            @media(min-width:768px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 3em;
+                    
+                       
+            }
+
+            @media(min-width:992px){
+                
+                margin: 0px 130px;
+                           
+            }
+
+            @media(min-width:1200px){
+                
+                margin: 0px 200px;
+                
+                    
+                       
+            }
             
             @media(min-width: 1400px){
                 display: flex;
+                flex-direction: row;
+                justify-content: start;
                 gap: 2rem;
+                margin: 0;
                      
             }
 
@@ -715,15 +749,20 @@ header{
                 // border: 1px solid black;
                 background-color: #ffffff;
                 padding: 30px;
-
+        
                 &:hover{
                     background-color: #F9D783;
                     color: #191919;
                 }
 
-                
+                @media(min-width:1200px){
+                    padding: 40px;
+                       
+                }
+
                 @media(min-width: 1400px){
-                    padding-bottom: 30px;
+                    padding: 30px;
+                    
                     
                     
                 }
@@ -756,23 +795,43 @@ header{
                     line-height: 35px;
                     width: 270px;
                     
-                    
-                    
-
                 }
 
                 .btn-arrow{
                     display: inline-block;
-
                     margin-left: 200px;
-                    margin-top: -20px;   
+                    margin-top: -20px;
+
                     
+                    @media(min-width: 768px){
+                        
+                        margin-left: 200px;
+                        margin-top: -20px;   
+                    }
+
+                    @media(min-width: 768px){
+                        
+                        margin-left: 180px;
+                        margin-top: -20px;   
+                    }
+
+                    
+
+
+
+                    @media(min-width: 1400px){
+                        
+                        margin-left: 200px;
+                        margin-top: -20px;   
+                    }
                 }
             }
         }
 
         .center-content{
             .btn-transparent{
+
+                margin-top: 40px;
 
                 @media(min-width: 1400px){
                     margin-top: 50px;
