@@ -511,6 +511,7 @@ header{
 .about-company{
 
     .container{
+        padding-bottom: 80px;
            
         @media(min-width: 1400px){
             padding-bottom: 120px;
@@ -662,7 +663,6 @@ header{
 
 
 .our-services{
-
     background-color: #F0EFE9;
     padding-bottom: 120px;
     position: relative;
@@ -675,38 +675,23 @@ header{
 
     .container{
 
-        
         .section-title{
             text-align: center;
-
-            // border: 1px solid black;
 
             @media(min-width:1400px){
                 padding-bottom: 20px;
                 text-align: start;
-                
-                
-
-            }
-
-            p{
-
             }
 
             h2{
                 @media(min-width: 1400px){
                     
-                    width: 500px;
-                    
-                    
+                    width: 500px;  
                 }
-
             }
-
         }
 
         .columns{
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -716,37 +701,33 @@ header{
             @media(min-width:768px){
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap: 3em;
-                    
-                       
+                gap: 3em;           
             }
 
             @media(min-width:992px){
                 
-                margin: 0px 130px;
-                           
+                margin: 0px 130px;   
+
             }
 
             @media(min-width:1200px){
-                
+
                 margin: 0px 200px;
-                
-                    
-                       
+                        
             }
             
             @media(min-width: 1400px){
+                
                 display: flex;
                 flex-direction: row;
                 justify-content: start;
                 gap: 2rem;
                 margin: 0;
-                     
+                 
             }
 
 
             .col1{
-                // border: 1px solid black;
                 background-color: #ffffff;
                 padding: 30px;
         
@@ -762,9 +743,7 @@ header{
 
                 @media(min-width: 1400px){
                     padding: 30px;
-                    
-                    
-                    
+                          
                 }
 
                 span{
@@ -773,19 +752,14 @@ header{
                         font-size: 35px;
                         margin-top:10px;
                         font-weight: 200;  
-                    }
-                    
+                    }   
                 }
-
-                
-                
+ 
                 h3{
                     font-family: 'DM Sans', sans-serif;
                     font-size: 22px;
                     font-weight: 700;
                     margin-top: 20px;
-             
-
                 }
 
                 p{
@@ -793,8 +767,7 @@ header{
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 35px;
-                    width: 270px;
-                    
+                    width: 270px;    
                 }
 
                 .btn-arrow{
@@ -802,7 +775,6 @@ header{
                     margin-left: 200px;
                     margin-top: -20px;
 
-                    
                     @media(min-width: 768px){
                         
                         margin-left: 200px;
@@ -814,10 +786,6 @@ header{
                         margin-left: 180px;
                         margin-top: -20px;   
                     }
-
-                    
-
-
 
                     @media(min-width: 1400px){
                         
@@ -836,8 +804,7 @@ header{
                 @media(min-width: 1400px){
                     margin-top: 50px;
 
-                }
-                
+                }   
             }
         }
     }

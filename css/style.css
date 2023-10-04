@@ -458,6 +458,9 @@ header .container .menu .btn-login {
   margin-right: 20px;
 }
 
+.about-company .container {
+  padding-bottom: 80px;
+}
 @media (min-width: 1400px) {
   .about-company .container {
     padding-bottom: 120px;
