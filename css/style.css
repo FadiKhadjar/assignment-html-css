@@ -93,6 +93,24 @@ html, body {
   color: #f2f2f2;
 }
 
+.btn-arrow {
+  background-color: #ffffff;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 46%;
+}
+.btn-arrow i {
+  font-size: 13px;
+  margin-left: 3px;
+}
+.btn-arrow:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #f2f2f2;
+}
+
 header {
   background-color: #f0efe9;
   padding: 16px;
@@ -444,7 +462,7 @@ header .container .menu .btn-login {
 
 @media (min-width: 1400px) {
   .about-company .container {
-    padding-top: 20px;
+    padding-bottom: 120px;
     padding-left: 90px;
     padding-top: 120px;
   }
@@ -572,6 +590,65 @@ header .container .menu .btn-login {
   font-family: "Inter", sans-serif;
   margin-top: 15px;
   margin-left: -15px;
+}
+
+.our-services {
+  background-color: #F0EFE9;
+  padding-bottom: 120px;
+  position: relative;
+}
+.our-services .white-wavy-lines-section {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (min-width: 1400px) {
+  .our-services .container .section-title {
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .our-services .container .section-title h2 {
+    width: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .our-services .container .columns {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.our-services .container .columns .col1 {
+  background-color: #ffffff;
+  padding: 35px;
+}
+.our-services .container .columns .col1:hover {
+  background-color: #F9D783;
+  color: #191919;
+}
+@media (min-width: 1400px) {
+  .our-services .container .columns .col1 {
+    padding-bottom: 90px;
+  }
+}
+.our-services .container .columns .col1 h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 60px;
+  border-top: 1px solid black;
+}
+.our-services .container .columns .col1 p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0px;
+}
+@media (min-width: 1400px) {
+  .our-services .container .center-content .btn-transparent {
+    margin-top: 30px;
+  }
 }
 
 .project-and-case .container .section-title {

@@ -103,6 +103,29 @@ html, body{
     }
 }
 
+.btn-arrow{
+
+    background-color: #ffffff;
+    border: 1px solid #191919;
+    color: #191919;
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 46%;
+
+    i{
+        font-size: 13px;
+        margin-left: 3px;
+        
+    }
+
+    &:hover{
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #f2f2f2;
+    }
+
+}
+
 header{
     background-color: #f0efe9;
     padding: 16px;
@@ -490,7 +513,7 @@ header{
     .container{
            
         @media(min-width: 1400px){
-            padding-top: 20px;
+            padding-bottom: 120px;
             padding-left: 90px;
             padding-top: 120px;
         }
@@ -636,6 +659,123 @@ header{
         }
     }
 }
+
+
+.our-services{
+
+    background-color: #F0EFE9;
+    padding-bottom: 120px;
+    position: relative;
+
+    .white-wavy-lines-section{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .container{
+
+        
+        .section-title{
+
+            // border: 1px solid black;
+
+            @media(min-width:1400px){
+                padding-bottom: 20px;
+                
+
+            }
+
+            p{
+
+            }
+
+            h2{
+                @media(min-width: 1400px){
+                    // border: 1px solid black;
+                    width: 500px;
+                    
+                    
+                }
+
+            }
+
+        }
+
+        .columns{
+            
+            @media(min-width: 1400px){
+                display: flex;
+                gap: 2rem;
+                
+                
+                
+            }
+
+
+            .col1{
+                // border: 1px solid black;
+                background-color: #ffffff;
+                padding: 35px;
+
+                &:hover{
+                    background-color: #F9D783;
+                    color: #191919;
+                }
+
+                
+                @media(min-width: 1400px){
+                    padding-bottom: 90px;
+                    // margin-right: 32px;
+                    
+
+                    
+                }
+
+                
+                
+                h3{
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-top: 60px;
+                    border-top: 1px solid black;
+                    
+
+                }
+
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 30px;
+                    margin: 0px;
+                    
+
+                }
+
+                .btn-arrow{
+                    
+                
+                }
+            }
+        }
+
+        .center-content{
+            .btn-transparent{
+
+                @media(min-width: 1400px){
+                    margin-top: 30px;
+
+                }
+                
+            }
+        }
+
+    }
+}
+
+
 
 
 
