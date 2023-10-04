@@ -559,7 +559,7 @@ header{
                     background-color: #BEEBFF;
                     height: 180px;
                     bottom: 40px;
-                    left: -38px;
+                    left: -50px;
                     width: 350px;
                 }
 
@@ -753,8 +753,10 @@ header{
                     font-family: 'Inter', sans-serif;
                     font-size: 16px;
                     font-weight: 300;
-                    line-height: 30px;
-                    margin: 0px;
+                    line-height: 35px;
+                    width: 270px;
+                    
+                    
                     
 
                 }
@@ -763,11 +765,9 @@ header{
                     display: inline-block;
 
                     margin-left: 200px;
-                    margin-top: 20px;   
+                    margin-top: -20px;   
                     
                 }
-
-
             }
         }
 
@@ -958,8 +958,8 @@ header{
                         height: 65px;
                         width: 58px;
                         left: 14px;
-                        top: 8px;
-                        margin-top: 15px;
+                        
+                        
                     }
 
                     h4{
