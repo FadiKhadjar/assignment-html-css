@@ -559,6 +559,7 @@ header .container .menu .btn-login {
   margin-top: -20px;
   text-align: start;
   margin-left: 35px;
+  width: 530px;
 }
 @media (min-width: 1400px) {
   .about-company .container .content .section-paragraph {
@@ -575,7 +576,8 @@ header .container .menu .btn-login {
 }
 @media (min-width: 1400px) {
   .about-company .container .content .center-content {
-    justify-content: start;
+    justify-content: flex-start;
+    border: 1px solid;
     margin-top: 64px;
     gap: 25px;
     padding-top: 25px;
@@ -727,6 +729,7 @@ header .container .menu .btn-login {
   justify-content: space-between;
   align-items: center;
   border: 1px solid black;
+  padding-bottom: 200px;
 }
 .choose-us .container .content .section-title h2 {
   width: 400px;
@@ -734,31 +737,56 @@ header .container .menu .btn-login {
 .choose-us .container .content .strengths {
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  gap: 2em;
   margin-left: 20px;
+  margin-top: -50px;
 }
 .choose-us .container .content .strengths .col1 {
   display: flex;
   align-items: center;
   gap: 1em;
 }
-.choose-us .background-box-parent {
-  position: relative;
+.choose-us .container .image {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .choose-us .container .image {
+    display: inline-block;
+    margin-left: 81px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .choose-us .container .image {
+    margin-left: 262px;
+    margin-bottom: 30px;
+  }
 }
 .choose-us .background-box-parent .background-box-child {
   position: absolute;
+  z-index: -1;
   display: none;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .choose-us .background-box-parent .background-box-child {
     display: block;
     flex-direction: column;
     background-color: #F0EFE9;
-    height: 425px;
+    height: 550px;
     bottom: 0px;
     right: 0px;
     width: 1057px;
-    z-index: -1;
+  }
+}
+@media (min-width: 1400px) {
+  .choose-us .background-box-parent .background-box-child {
+    display: inline-block;
+    flex-direction: column;
+    background-color: #F0EFE9;
+    height: 550px;
+    bottom: 0px;
+    right: 0px;
+    width: 1057px;
   }
 }
 

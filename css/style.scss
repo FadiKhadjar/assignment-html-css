@@ -586,6 +586,7 @@ header{
                     font-weight: 300;
                     padding: 20px;
                     margin-top: -30px;
+                    
                 }
             }
         }
@@ -615,6 +616,7 @@ header{
                 margin-top: -20px;
                 text-align: start;
                 margin-left: 35px;
+                width: 530px;
                 
                 @media(min-width: 1400px){
                     display: grid;
@@ -632,11 +634,13 @@ header{
                 
                       
                 @media(min-width:1400px){
-                    justify-content: start;
+                    justify-content: flex-start;
+                    border: 1px solid;
                     margin-top:64px;
                     gap: 25px;
                     padding-top: 25px;
                     padding-bottom: 30px;
+                    
                 }
 
                 .btn-black{
@@ -650,6 +654,7 @@ header{
                     font-family: 'Inter', sans-serif;
                     margin-top: 15px;
                     margin-left: -15px;
+                    
                     
 
 
@@ -824,10 +829,16 @@ header{
         justify-content: space-between;
         align-items: center;
         border: 1px solid black;
+        
+        padding-bottom: 200px;
 
         .content{
+            
+            
 
             .section-title{
+
+                
                 p{
 
                 }
@@ -843,8 +854,10 @@ header{
 
                 display: flex;
                 flex-direction: column;
-                gap: 4em;
+                gap: 2em;
                 margin-left: 20px;
+                margin-top: -50px;
+                
                 
 
                 .col1{
@@ -880,34 +893,58 @@ header{
 
         }
 
+        .image{
 
-          
+            display: none;
 
+            @media(min-width: 1200px){
+                display: inline-block;
+                
+                margin-left: 81px;
+                margin-bottom: 40px;
+                
+            }
 
+            @media(min-width: 1400px){
+                margin-left: 262px;
+                margin-bottom: 30px;
+            
+            }
+           
+        }
 
     }
 
     .background-box-parent{
-
-        position: relative;
-        
-        
+ 
         .background-box-child{
 
             position: absolute;
+            z-index: -1;
             
             display: none;
 
-            @media(min-width: 1400px){
-                display: block;
+            @media(min-width:1200px){
+                display:block;
                 flex-direction: column;
                 background-color: #F0EFE9;
-                height: 425px;
+                height: 550px;
                 bottom: 0px;
                 right: 0px;
                 width: 1057px;
 
-                z-index: -1;
+            }
+
+            @media(min-width: 1400px){
+                display:inline-block;
+                flex-direction: column;
+                background-color: #F0EFE9;
+                height: 550px;
+                bottom: 0px;
+                right: 0px;
+                width: 1057px;
+
+                
             }
             
             
