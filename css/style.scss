@@ -87,8 +87,14 @@ html, body{
     border: 1px solid #191919;
     color: #191919;
     text-decoration: none;
-    padding: 15px 20px;
-    border-radius: 45%;
+    padding: 7px 14px;
+    border-radius: 46%;
+
+    i{
+        font-size: 13px;
+        margin-left: 3px;
+        
+    }
 
     &:hover{
         background-color: #191919;
@@ -482,38 +488,153 @@ header{
 .about-company{
 
     .container{
+           
+        @media(min-width: 1400px){
+            padding-top: 20px;
+            padding-left: 90px;
+            padding-top: 120px;
+        }
+        
+        @media(min-width:1400px){
+            display: flex;
+        }
+     
+        .founder{
+            position: relative;
+            top: 0;
+            left: 0;
+
+            .img-of-founder{
+                position: relative;
+                display: none;
+
+                @media(min-width: 1400px){
+                    display: flex;
+                } 
+            }
+                
+            .background-white-wavy-lines{
+                display: none;
+                
+                @media(min-width:1400px){
+                    display: flex;
+                    height: auto;
+                    position: absolute;
+                    top: 33px;
+                    left: -38px;
+                    width: 235px;
+                }
+            }
+
+            .blue-position-box{
+                position: absolute;
+                display: none;
+
+                @media(min-width: 1400px){
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #BEEBFF;
+                    height: 180px;
+                    bottom: 40px;
+                    left: -38px;
+                    width: 350px;
+                }
+
+                h6{
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #191919;
+                    padding: 20px;
+                    margin-top: 20px;
+                }
+
+                span{
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #F94D1C;
+                }
+
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 300;
+                    padding: 20px;
+                    margin-top: -30px;
+                }
+            }
+        }
 
         .content{
 
-            .parent{
-                position: relative;
-                top: 0;
-                left: 0;
-                
-                .img-of-founder{
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: auto;
-
-                }
-                    
-                .background-white-wavy-lines{
-                    position: absolute;
-                    top: 15px;
-                    left: -14px;
-                    width: 115px;
-                }
-                
+            @media(min-width:1400px){
+                padding-left: 140px;
             }
 
+            .section-title{
+                text-align: center;
+                
+                @media(min-width: 1400px){
+                    text-align: start;
+                    margin-bottom: -70px;
+                    padding-top: 0px;
+                    padding-right: 20px;
+
+                }  
+            }
+    
+            .section-paragraph{
+                font-family: 'Inter', sans-serif;
+                font-size: 16;
+                font-weight: 300;
+                margin-top: -20px;
+                text-align: start;
+                margin-left: 35px;
+                
+                @media(min-width: 1400px){
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    row-gap: 10px;
+                    line-height: 35px;
+                    margin: 0;
+                }
+            }
+
+            .center-content{
+
+                margin-top: 40px;
+                gap: 20px;
+                
+                      
+                @media(min-width:1400px){
+                    justify-content: start;
+                    margin-top:64px;
+                    gap: 25px;
+                    padding-top: 25px;
+                    padding-bottom: 30px;
+                }
+
+                .btn-black{
+                    font-size: 16px;
+                    padding: 8px 16px;
+
+                }
+
+                p{
+                    font-size: 16px;
+                    font-family: 'Inter', sans-serif;
+                    margin-top: 15px;
+                    margin-left: -15px;
+                    
+
+
+
+                }
+
+            }
         }
     }
-
-
-                             
-
 }
 
 

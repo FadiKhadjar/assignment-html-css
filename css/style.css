@@ -80,8 +80,12 @@ html, body {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 15px 20px;
-  border-radius: 45%;
+  padding: 7px 14px;
+  border-radius: 46%;
+}
+.btn-play i {
+  font-size: 13px;
+  margin-left: 3px;
 }
 .btn-play:hover {
   background-color: #191919;
@@ -438,23 +442,136 @@ header .container .menu .btn-login {
   margin-right: 20px;
 }
 
-.about-company .container .content .parent {
+@media (min-width: 1400px) {
+  .about-company .container {
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-top: 120px;
+  }
+}
+@media (min-width: 1400px) {
+  .about-company .container {
+    display: flex;
+  }
+}
+.about-company .container .founder {
   position: relative;
   top: 0;
   left: 0;
 }
-.about-company .container .content .parent .img-of-founder {
+.about-company .container .founder .img-of-founder {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
+  display: none;
 }
-.about-company .container .content .parent .background-white-wavy-lines {
+@media (min-width: 1400px) {
+  .about-company .container .founder .img-of-founder {
+    display: flex;
+  }
+}
+.about-company .container .founder .background-white-wavy-lines {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .about-company .container .founder .background-white-wavy-lines {
+    display: flex;
+    height: auto;
+    position: absolute;
+    top: 33px;
+    left: -38px;
+    width: 235px;
+  }
+}
+.about-company .container .founder .blue-position-box {
   position: absolute;
-  top: 15px;
-  left: -14px;
-  width: 115px;
+  display: none;
+}
+@media (min-width: 1400px) {
+  .about-company .container .founder .blue-position-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #BEEBFF;
+    height: 180px;
+    bottom: 40px;
+    left: -38px;
+    width: 350px;
+  }
+}
+.about-company .container .founder .blue-position-box h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #191919;
+  padding: 20px;
+  margin-top: 20px;
+}
+.about-company .container .founder .blue-position-box span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #F94D1C;
+}
+.about-company .container .founder .blue-position-box p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 20px;
+  margin-top: -30px;
+}
+@media (min-width: 1400px) {
+  .about-company .container .content {
+    padding-left: 140px;
+  }
+}
+.about-company .container .content .section-title {
+  text-align: center;
+}
+@media (min-width: 1400px) {
+  .about-company .container .content .section-title {
+    text-align: start;
+    margin-bottom: -70px;
+    padding-top: 0px;
+    padding-right: 20px;
+  }
+}
+.about-company .container .content .section-paragraph {
+  font-family: "Inter", sans-serif;
+  font-size: 16;
+  font-weight: 300;
+  margin-top: -20px;
+  text-align: start;
+  margin-left: 35px;
+}
+@media (min-width: 1400px) {
+  .about-company .container .content .section-paragraph {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    line-height: 35px;
+    margin: 0;
+  }
+}
+.about-company .container .content .center-content {
+  margin-top: 40px;
+  gap: 20px;
+}
+@media (min-width: 1400px) {
+  .about-company .container .content .center-content {
+    justify-content: start;
+    margin-top: 64px;
+    gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+}
+.about-company .container .content .center-content .btn-black {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.about-company .container .content .center-content p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  margin-top: 15px;
+  margin-left: -15px;
 }
 
 .project-and-case .container .section-title {
