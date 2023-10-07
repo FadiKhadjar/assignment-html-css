@@ -24,6 +24,7 @@ html, body {
   font-weight: 600;
   border-radius: 25px;
   font-size: 16px;
+  transition-duration: 350ms;
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -44,6 +45,7 @@ html, body {
   font-weight: 600;
   border-radius: 25px;
   font-size: 16px;
+  transition-duration: 350ms;
 }
 .btn-black i {
   margin-left: 8px;
@@ -64,6 +66,7 @@ html, body {
   font-weight: 600;
   border-radius: 25px;
   font-size: 16px;
+  transition-duration: 350ms;
 }
 .btn-transparent i {
   margin-left: 8px;
@@ -82,6 +85,7 @@ html, body {
   text-decoration: none;
   padding: 7px 14px;
   border-radius: 46%;
+  transition-duration: 350ms;
 }
 .btn-play i {
   font-size: 13px;
@@ -99,6 +103,7 @@ html, body {
   text-decoration: none;
   padding: 15px 20px;
   border-radius: 50%;
+  transition-duration: 350ms;
 }
 .btn-arrow i {
   font-size: 20px;
@@ -128,6 +133,7 @@ html, body {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    transition-duration: 200ms;
   }
   .dots .dot:hover {
     background-color: #191919;
@@ -204,6 +210,7 @@ header .container .socialmedia-bar a {
   color: #191919;
   font-size: 1.3rem;
   margin-left: 10px;
+  transition-duration: 300ms;
 }
 header .container .socialmedia-bar a:hover {
   color: #7c7c7c;
@@ -599,6 +606,7 @@ header .container .menu .btn-login {
 }
 @media (min-width: 1400px) {
   .about-company .container .content .center-content {
+    display: flex;
     justify-content: flex-start;
     margin-top: 64px;
     gap: 25px;
@@ -647,6 +655,7 @@ header .container .menu .btn-login {
   align-items: center;
   flex-direction: column;
   gap: 2em;
+  transition-duration: 300ms;
 }
 @media (min-width: 768px) {
   .our-services .container .columns {
@@ -714,6 +723,7 @@ header .container .menu .btn-login {
   display: inline-block;
   margin-left: 200px;
   margin-top: -20px;
+  transition-duration: 350ms;
 }
 @media (min-width: 768px) {
   .our-services .container .columns .col1 .btn-arrow {
@@ -1022,11 +1032,16 @@ header .container .menu .btn-login {
 @media (min-width: 1400px) {
   .testimonial .container {
     max-width: 1600px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
   }
 }
 .testimonial .container .center-content .section-title {
   text-align: center;
+}
+@media (min-width: 1400px) {
+  .testimonial .container .center-content .section-title {
+    margin-bottom: -10px;
+  }
 }
 .testimonial .container .columns {
   display: block;
@@ -1039,6 +1054,11 @@ header .container .menu .btn-login {
     align-items: center;
   }
 }
+@media (min-width: 1400px) {
+  .testimonial .container .columns {
+    margin-left: 90px;
+  }
+}
 .testimonial .container .columns .column .font-stars i {
   color: #F94D1C;
   margin-bottom: 20px;
@@ -1047,6 +1067,12 @@ header .container .menu .btn-login {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 300;
+}
+@media (min-width: 1400px) {
+  .testimonial .container .columns p {
+    width: 355px;
+    border: 1px solid black;
+  }
 }
 .testimonial .container .columns .clients {
   display: flex;
@@ -1070,6 +1096,11 @@ header .container .menu .btn-login {
 }
 .testimonial .container .center-content .btn-black {
   margin-bottom: 60px;
+}
+@media (min-width: 1400px) {
+  .testimonial .container .center-content .btn-black {
+    margin-top: 5px;
+  }
 }
 
 .article-and-news .container .center-content {
@@ -1457,6 +1488,10 @@ footer .container .row .footer-col ul a {
   font-weight: 300;
   color: #FFFFFF;
   margin-right: 100px;
+  transition-duration: 300ms;
+}
+footer .container .row .footer-col ul a:hover {
+  color: #F0D082;
 }
 footer .footer-end {
   border-top: 0.5px solid #707070;
@@ -1483,6 +1518,7 @@ footer .footer-end .container .socialmedia-bar {
 footer .footer-end .container .socialmedia-bar a {
   color: #dad9d3;
   font-size: 1.3rem;
+  transition-duration: 300ms;
 }
 footer .footer-end .container .socialmedia-bar a:hover {
   color: #7c7c7c;
