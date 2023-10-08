@@ -1731,6 +1731,160 @@ footer .footer-end .container .socialmedia-bar a:hover {
   display: block;
 }
 
+.message .container {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  background-color: #F0EFE9;
+  margin-bottom: 30px;
+}
+@media (min-width: 1400px) {
+  .message .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 90px;
+  }
+}
+.message .container h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+@media (min-width: 992px) {
+  .message .container h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  .message .container h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 45px;
+  }
+}
+.message .container span {
+  display: block;
+}
+.message .container .registerForm .input-field {
+  margin-bottom: 1em;
+}
+.message .container .registerForm .input-field .name {
+  color: #191919;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  padding-right: 90px;
+}
+@media (min-width: 576px) {
+  .message .container .registerForm .input-field .name {
+    padding-right: 180px;
+  }
+}
+@media (min-width: 768px) {
+  .message .container .registerForm .input-field .name {
+    padding-right: 270px;
+  }
+}
+@media (min-width: 992px) {
+  .message .container .registerForm .input-field .name {
+    padding-right: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .message .container .registerForm .input-field .name {
+    padding-right: 750px;
+    margin-left: 120px;
+  }
+}
+.message .container .registerForm .input-field .email {
+  color: #191919;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  padding-right: 90px;
+}
+@media (min-width: 576px) {
+  .message .container .registerForm .input-field .email {
+    padding-right: 180px;
+  }
+}
+@media (min-width: 768px) {
+  .message .container .registerForm .input-field .email {
+    padding-right: 270px;
+  }
+}
+@media (min-width: 992px) {
+  .message .container .registerForm .input-field .email {
+    padding-right: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .message .container .registerForm .input-field .email {
+    padding-right: 750px;
+    margin-left: 120px;
+  }
+}
+.message .container .registerForm .input-field .yourMessage {
+  color: #191919;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  padding-bottom: 60px;
+  padding-right: 90px;
+}
+@media (min-width: 576px) {
+  .message .container .registerForm .input-field .yourMessage {
+    padding-right: 180px;
+  }
+}
+@media (min-width: 768px) {
+  .message .container .registerForm .input-field .yourMessage {
+    padding-right: 270px;
+  }
+}
+@media (min-width: 992px) {
+  .message .container .registerForm .input-field .yourMessage {
+    padding-right: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .message .container .registerForm .input-field .yourMessage {
+    padding-right: 750px;
+    margin-left: 120px;
+    padding-bottom: 100px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 576px) {
+  .message .container .btn-yellow {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .message .container .btn-yellow {
+    width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .message .container .btn-yellow {
+    width: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .message .container .btn-yellow {
+    width: 1010px;
+    margin-left: 120px;
+  }
+}
+
 .map img {
   width: 100%;
 }
