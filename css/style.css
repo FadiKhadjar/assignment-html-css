@@ -660,6 +660,12 @@ header .container .menu .btn-login {
   position: absolute;
   bottom: 0;
   right: 0;
+  display: none;
+}
+@media (min-width: 992px) {
+  .our-services .white-wavy-lines-section {
+    display: inline-block;
+  }
 }
 .our-services .container .section-title {
   text-align: center;
@@ -804,19 +810,19 @@ header .container .menu .btn-login {
   z-index: -1;
   right: 0px;
   bottom: 0px;
+  background-color: #F0EFE9;
   display: none;
 }
 @media (min-width: 1200px) {
   .why-choose-us .background-box-child {
     display: block;
-    background-color: #F0EFE9;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .why-choose-us .background-box-child {
-    background-color: #F0EFE9;
-    height: 450px;
-    width: 1060px;
+    height: 400px;
+    top: 270px;
+    width: 950px;
   }
 }
 .why-choose-us .image {
@@ -858,19 +864,21 @@ header .container .menu .btn-login {
     padding-bottom: 125px;
   }
 }
-.why-choose-us .container .content {
-  border: 1px solid black;
-}
 @media (min-width: 1200px) {
   .why-choose-us .container .content {
     height: 630px;
     width: 400px;
+    margin-left: 30px;
   }
 }
 @media (min-width: 1400px) {
   .why-choose-us .container .content {
     margin-left: 60px;
-    width: 400px;
+  }
+}
+@media (min-width: 1600px) {
+  .why-choose-us .container .content {
+    margin-left: 300px;
   }
 }
 .why-choose-us .container .content .section-title {
@@ -894,10 +902,13 @@ header .container .menu .btn-login {
   gap: 1em;
   text-decoration: none;
   color: #191919;
+  justify-content: center;
 }
 @media (min-width: 1400px) {
   .why-choose-us .container .content .col1 {
-    padding-top: 20px;
+    padding-top: 35px;
+    margin-left: 20px;
+    margin-top: -10px;
   }
 }
 .why-choose-us .container .content .col1:hover {
@@ -1467,7 +1478,6 @@ footer .wavy-lines-footer {
     position: absolute;
     bottom: 85px;
     right: 0px;
-    width: 100px;
     width: 300px;
   }
 }
